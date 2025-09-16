@@ -124,27 +124,6 @@ yaml
 
 ---
 
-## Diagram: VPC with Public and Private Subnets
-
-java
-
-+--------------------------+
-|        My VPC (10.0.0.0/16) 
-|   Region: eu-north-1
-|
-Internet <-> IGW
-|
-+-------+--------+
-| Public Subnet |
-| 10.0.1.0/24 |
-| EC2 (Web/App) |
-+----------------+
-|
-+-------+--------+
-| Private Subnet |
-| 10.0.2.0/24 |
-| EC2 (DB/App) |
-+----------------+
 
 yaml
 Copy code
