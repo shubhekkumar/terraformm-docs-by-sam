@@ -35,7 +35,7 @@ This document explains **VPC, subnets, CIDR blocks, route tables, and internet g
 IP address / prefix length
 
 markdown
-Copy code
+
 - Example: `192.168.1.0/24`.  
   - `/24` → First 24 bits fixed, last 8 bits for hosts.  
   - Range: `192.168.1.0 – 192.168.1.255`.  
@@ -61,7 +61,7 @@ Binary : 00001010.00000000.00000001.00000000
 /24 → First 24 bits (network), last 8 bits (hosts)
 Range: 10.0.1.0 – 10.0.1.255
 
-yaml
+---
 ## Route Tables
 - A **route table** is a set of rules that decide where network traffic is directed.  
 - Every subnet must be associated with a route table.  
@@ -121,12 +121,6 @@ yaml
   - Subnet: **Private Subnet (10.0.2.0/24)**.  
   - Auto-assign public IP: **Disabled**.  
 - Security Group: Allow SSH from your IP.  
-
----
-
-
-yaml
-Copy code
 
 ---
 
